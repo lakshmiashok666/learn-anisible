@@ -1,6 +1,6 @@
- -name: Declare variable
- hosts: all
- vars:
+ - name: Declare variable
+   hosts: all
+   vars:
    fav color: blue
    URL: example.com
    tasks:
