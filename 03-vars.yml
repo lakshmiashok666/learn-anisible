@@ -16,4 +16,4 @@
       register: output
     - name: print output
       ansible.builtin.debug:
-           msg: "{{ output.stdoutput | split('') }}"
+           msg: "{{ output.stdoutput | split( '' ) }}"
