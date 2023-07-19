@@ -1,7 +1,7 @@
  - name: Declare variable
    hosts: all
    vars:
-    favcolor: blue
+    favcolor: red
     URL: example.com
    tasks:
      - name: print the url variable
