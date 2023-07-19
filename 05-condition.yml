@@ -1,4 +1,4 @@
-- name: Demo on conditoions
+- name: Demo on conditions
   hosts: localhost
   connection: local
   tasks:
