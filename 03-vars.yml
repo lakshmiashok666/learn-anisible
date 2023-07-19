@@ -15,6 +15,6 @@
       ansible.builtin.shell: uptime
       register: output
 
-    - name: print o/p
+    - name: Print o/p
       ansible.builtin.debug:
         msg: "{{ output.stdout | split('') }}"
