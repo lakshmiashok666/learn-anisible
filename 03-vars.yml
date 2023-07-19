@@ -1,9 +1,19 @@
- - name: Declare variable
-   hosts: all
-   vars:
-    favcolor: red
-    URL: example.com
+ #- name: Declare variable
+ #  hosts: all
+  # vars:
+   # favcolor: red
+    #URL: example.com
+   #tasks:
+    # - name: print the url variable
+     #  ansible.builtin.debug:
+      #   msg: URL -{{URL}}
+ - name: Register variable
+   hosts: localhost
+   connection: local
    tasks:
-     - name: print the url variable
-       ansible.builtin.debug:
-         msg: URL -{{URL}}
+    - name: shell command
+      ansible.builtin.shel: uptime
+      register: output
+    - name: print output
+      ansible.builtin.debug:
+           msg: "{{ output }}"
